@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Tickets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type="text/css" href="Skyliner\stylesheet.css" />  
+    </head>
+
+    <body>
+
+          <!--Navigation Bar-->
+              <div id="navbar">
+                <a href="#home"><button class="openbtn" onclick="openNav()">
+              <div id="menuicon"></div>
+              <div id="menuicon"></div>
+              <div id="menuicon"></div>
+                    </button>  </a>
+                <div class="topnav-centered">
+                  <a href="C:\Users\Teapot\Documents\My Web Sites\index.html" class="active"><img width=70px src="skylinerwhite.png"></a>
+                </div>
+              </div>
+              
+
+          <!--Side Menu-->
+              <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\index.html"><img height=15px; src=home.png> Home</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\tickets.html"><img height=15px; src=ticket.png> Tickets</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\jobs.html"><img height=15px; src=briefcase.png> Jobs</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\rewards.html"><img height=15px; src=debitcard.png> Rewards</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\social.html"><img height=15px; src=hashtag.png> Social</a>
+              </div>
+
+              <div class="content">
+
+                    <div class="row">
+                        <div class="column">
+                          <div class="content">
+                            <img src="C:\Users\Teapot\Documents\My Web Sites\Skyliner\Places\arizona.jpg" alt="Mountains" style="width:100%">
+                            <h3>Arizona</h3>
+                            <ul>
+                              <li>SLC >> Pheonix : 6AM - 8AM</li>
+                              <li>SLC >> Pheonix : 2PM - 4PM</li>
+                              <li>SLC >> Pheonix : 6AM - 8AM</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="column">
+                          <div class="content">
+                          <img src="C:\Users\Teapot\Documents\My Web Sites\Skyliner\Places\denver.jpg" alt="Lights" style="width:100%">
+                            <h3>Colorado</h3>
+                            <ul>
+                                <li>SLC >> Pheonix : 6AM - 8AM</li>
+                                <li>SLC >> Pheonix : 2PM - 4PM</li>
+                                <li>SLC >> Pheonix : 6AM - 8AM</li>
+                              </ul>                          </div>
+                        </div>
+
+                        <div class="column">
+                          <div class="content">
+                          <img src="C:\Users\Teapot\Documents\My Web Sites\Skyliner\Places\idaho.jpg" alt="Nature" style="width:100%">
+                            <h3>Idaho</h3>
+                            <ul>
+                                <li>SLC >> Boise : 6AM - 8AM</li>
+                                <li>SLC >> Boise : 2PM - 4PM</li>
+                                <li>SLC >> Boise : 6AM - 8AM</li>
+                              </ul>                          </div>
+
+                        </div>
+                        <div class="column">
+                          <div class="content">
+                          <img src="C:\Users\Teapot\Documents\My Web Sites\Skyliner\Places\newmexico.jpg" alt="Mountains" style="width:100%">
+                            <h3>New Mexico</h3>
+                            <ul>
+                                <li>SLC >> Santa Fe : 6AM - 8AM</li>
+                                <li>SLC >> Santa Fe : 2PM - 4PM</li>
+                                <li>SLC >> Santa Fe : 6AM - 8AM</li>
+                              </ul>V                          </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="content">
+                            <img src="C:\Users\Teapot\Documents\My Web Sites\Skyliner\Places\vegas.jpg" alt="Nature" style="width:100%">
+                              <h3>Nevada</h3>
+                              <ul>
+                                  <li>SLC >> Las Vegas : 6AM - 8AM</li>
+                                  <li>SLC >> Las Vegas : 2PM - 4PM</li>
+                                  <li>SLC >> Las Vegas : 6AM - 8AM</li>
+                                </ul>                            </div>
+  
+                          </div>
+                          <div class="column">
+                            <div class="content">
+                            <img src="C:\Users\Teapot\Documents\My Web Sites\Skyliner\Places\utah.jpg" alt="Mountains" style="width:100%">
+                              <h3>Utah</h3>
+                              <ul>
+                                  <li>Pheonix >> SLC : 6AM - 8AM</li>
+                                  <li>Boise >> SLC : 2PM - 4PM</li>
+                                  <li>Santa Fe >> SLC : 6AM - 8AM</li>
+                                </ul>                            </div>
+                          </div>
+                <!-- END GRID -->
+                
+                </div>
+
+      
+          <!--Special Effects-->
+                <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                  if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                  } else {
+                    document.getElementById("navbar").style.top = "-70px";
+                  }
+                  prevScrollpos = currentScrollPos;
+                }
+
+                function openNav() {
+                  document.getElementById("mySidepanel").style.width = "130px";
+                }
+
+                function closeNav() {
+                  document.getElementById("mySidepanel").style.width = "0";
+                }
+                </script>
+          
+
+    </body>
+  </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Social</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type="text/css" href="Skyliner\stylesheet.css" />  
+    </head>
+
+    <body>
+
+          <!--Navigation Bar-->
+              <div id="navbar">
+                <a href="#home"><button class="openbtn" onclick="openNav()">
+              <div id="menuicon"></div>
+              <div id="menuicon"></div>
+              <div id="menuicon"></div>
+                    </button>  </a>
+                <div class="topnav-centered">
+                  <a href="C:\Users\Teapot\Documents\My Web Sites\index.html" class="active"><img width=70px src="skylinerwhite.png"></a>
+                </div>
+              </div>
+
+                  <div style="padding:0px 0px 2500px;font-size:30px;margin-top:30px;">
+                <img width=100% src="skyline.jpg">
+                <img width=100% src="flightattendant.jpg">
+                <img width=100% src="wing.jpg"> 
+                <img width=100% src="social.jpg">
+                  </div>
+              
+
+          <!--Side Menu-->
+              <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\index.html"><img height=15px; src=home.png> Home</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\tickets.html"><img height=15px; src=ticket.png> Tickets</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\jobs.html"><img height=15px; src=briefcase.png> Jobs</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\rewards.html"><img height=15px; src=debitcard.png> Rewards</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\social.html"><img height=15px; src=hashtag.png> Social</a>
+              </div>
+
+      
+          <!--Special Effects-->
+                <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                  if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                  } else {
+                    document.getElementById("navbar").style.top = "-70px";
+                  }
+                  prevScrollpos = currentScrollPos;
+                }
+
+                function openNav() {
+                  document.getElementById("mySidepanel").style.width = "130px";
+                }
+
+                function closeNav() {
+                  document.getElementById("mySidepanel").style.width = "0";
+                }
+                </script>
+
+          <!--Parallax Scrolling-->
+                <div class="parallax"></div>
+
+                <div style="height:1000px;background-color:red;font-size:36px">
+
+                </div>
+
+                <div class="parallax"></div>
+
+    </body>
+  </html>

@@ -1,0 +1,404 @@
+            /* Navbar */
+                  body, html {
+                    margin: 0;
+                    background-color: #f1f1f1;
+                    font-family: Arial, Helvetica, sans-serif;
+                    height: 100%;
+                    margin: 0;
+                  }
+                  
+
+                  #menuicon {
+                    width: 25px;
+                    height: 3px;
+                    background-color: white;
+                    margin: 5px 0;
+                  }
+                      
+                  #navbar {
+                    background-color: black;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    display: block;
+                    transition: top 0.3s;
+                    padding: 10px;
+                    z-index: 1;
+                    
+                  }
+                  
+                  #navbar a {
+                    float: left;
+                    display: block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 10px;
+                    text-decoration: none;
+                    font-size: 17px;
+                  }
+                  
+                  .topnav-centered a {
+                    float: top;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  }
+                  
+                  #navbar:hover {
+                    background-color: #101010;
+                    color: white;
+                  }
+
+           
+            /* Side Menu */      
+            .sidepanel {
+                height: 100%; 
+                width: 0;
+                position: fixed; 
+                z-index: 2; 
+                top: 0;
+                left: 0;
+                background-color: black; 
+                overflow-x: hidden; 
+                padding-top: 20px; 
+                transition: 0.5s; 
+                font-family: "Lato", sans-serif;
+              }
+              
+              .sidepanel a {
+                padding: 8px 8px 8px 8px;
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                display: block;
+                transition: 0.3s;
+              }
+              
+              .sidepanel a:hover {
+                color: gainsboro;
+              }
+              
+              .sidepanel .closebtn {
+                position: absolute;
+                top: -5px;
+                right: 0px;
+                font-size: 50px;
+                margin-left: 50px;
+              }
+              
+              .openbtn {
+                background-color: black;
+                color: white;
+                padding: 10px;
+                border: none;
+              }
+              
+              .openbtn:hover {
+                color: gainsboro;
+              }
+          
+        /* Links */
+        a:link {
+            color:#fff;
+            text-decoration: none;
+          }
+          
+          /* visited link */
+          a:visited {
+            color:#fff;
+          }
+          
+          /* selected link */
+          a:active {
+            color: #fff;
+          }
+
+          /* Footer */
+          .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+         }
+                
+
+          /* Parallax Homepage*/
+                .skyline, .wing, .social, .flightattendant, .rewardsParallax {
+                    position: relative;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover; 
+
+                }
+                /* The images used */
+                .skyline {
+                    background-image: url("skyline.jpg");
+                    height: 900px;
+                }    
+                
+                .wing {    
+                    background-image: url("wing.jpg");
+                    height: 700px;
+                }
+                
+                .social {
+                    background-image: url("social.jpg");
+                    height: 700px;
+                }
+                
+                .flightattendant {
+                    background-image: url("flightattendant.jpg");
+                    height: 700px;
+                }
+
+                .caption {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 100%; 
+                    text-align: center;
+                    color: #000000;
+                    
+                    
+                }
+
+                .caption span.border {
+                    background-color: rgb(83, 83, 83);
+                    color: #fff;
+                    padding: 18px;
+                    font-size: 25px;
+                    letter-spacing: 10px;
+                    border-radius: 15px;
+                    padding: 40px;
+                }
+
+                @media only screen and (max-device-width: 1020px) {
+                    .skyline, .wing, .social, .flightattendant {
+                        background-attachment: scroll;
+
+                    }
+                }
+                
+        /* Homepage Text*/
+                
+                .text_style_header {
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    font: 20px, "Lato", sans-serif;
+                    color: rgb(83, 83, 83);
+                }
+
+                .text_style_paragraph {
+                    letter-spacing: 5px;
+                    font: 20px, "Lato", sans-serif;
+                    color: rgb(83, 83, 83);
+                    text-align: center;
+                }
+
+                .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 20%;
+                }
+        
+        /*Tickets page*/
+                  .row {
+                    margin: 8px -16px;
+                  }
+                  
+                  /* Add padding BETWEEN each column */
+                  .row,
+                  .row > .column {
+                    padding: 8px;
+                  }
+                  
+                  /* Create four equal columns that floats next to each other */
+                  .column {
+                    float: left;
+                    width: 25%;
+                     
+                  }
+                  
+                  /* Clear floats after rows */ 
+                  .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
+                  
+                  /* Content */
+                  .content {
+                    background-color: white;
+                    padding: 10px;
+                    padding-top: 70px; 
+                    display: inline-block;
+                    margin: auto; 
+                  }
+                  
+                  /* Responsive layout - makes a two column-layout instead of four columns */
+                  @media screen and (max-width: 900px) {
+                    .column {
+                      width: 50%;
+                    }
+                  }
+                  
+                  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                  @media screen and (max-width: 600px) {
+                    .column {
+                      width: 100%;
+                    }          
+
+        /*Rewards Page*/    
+          .rewardsParallax {
+                    background-image: url("flightattendant.jpg");
+                    min-height: 600px; 
+                    position: relative;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;   
+                    background-attachment: fixed;                               
+                  }                  
+                  
+                  /*.text_style_jobs {
+                    color: white;
+                    letter-spacing: 5px;
+                        font: 20px, "Lato", sans-serif;                 
+                        text-align: center;
+                  }
+    
+                  .captionJobs {
+                    position: absolute;
+                    left: 0;
+                    top: 35%;
+                    width: 100%; 
+                    text-align: center;
+                    color: #000000; 
+                  }
+                  */
+    
+                    .captionJobs span.border {
+                      background-color: rgb(102, 101, 101);
+                      color: #fff;
+                      padding: 30px;
+                      font-size: 25px;
+                      letter-spacing: 10px;
+                      border-radius: 15px;
+                  }
+
+              }  
+          }
+
+
+
+            /* Credit Cards 
+                          .gold {
+                                height: 500px; 
+                                z-index: 1; 
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                text-align: center;
+                                color: #000000;
+                                padding: 10px;
+                          }     
+                          
+                          .silver {
+                            height: 500px; 
+                                z-index: 1; 
+                                position: absolute;
+                                left: 10%;
+                                top: 50%;
+                                text-align: center;
+                                color: #000000;
+                                padding: 10px;
+                          }
+
+                          .bronze {
+                            height: 500px; 
+                                z-index: 1; 
+                                position: absolute;
+                                left: 100%;
+                                top: 50%;
+                                text-align: center;
+                                color: #000000;
+                                padding: 10px;
+                          }
+                          */
+          /*Jobs Page*/ 
+         
+              .formsInput {
+                background-color: rgb(37, 62, 131);
+                width: 100%;    
+                text-align: center;
+                position: relative;
+                color: rgb(236, 236, 236);
+                
+           }
+
+                .input1{
+                  margin-top: 10px;
+                  border-color:white;
+                  padding-top: 5px;
+                  padding-bottom: 5px;
+                  font-family: "Lato", sans-serif;
+                  color: white;
+                }
+
+              .formStyle {
+                font-family: 'Courier New', Courier, monospace
+              }
+
+              .jobh1{
+                  font: 20px;
+                  color: black;
+                  text-align: center;
+              }
+
+              .jobParallax{
+                background-image: url("careers.jpg");
+                min-height: 600px; 
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;   
+                background-attachment: fixed;                               
+              }                  
+              
+              .text_style_jobs {
+                color: white;
+                letter-spacing: 5px;
+                    font: 20px, "Lato", sans-serif;                 
+                    text-align: center;
+              }
+
+              .captionJobs {
+                position: absolute;
+                left: 0;
+                top: 35%;
+                width: 100%; 
+                text-align: center;
+                color: #000000; 
+              }
+
+                .captionJobs span.border {
+                  background-color: rgb(102, 101, 101);
+                  color: #fff;
+                  padding: 30px;
+                  font-size: 25px;
+                  letter-spacing: 10px;
+                  border-radius: 15px;
+
+                  .reward
+              }
+                  
+                
+                       
+
+            
+      

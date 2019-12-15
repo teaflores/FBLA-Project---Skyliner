@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Skyliner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type="text/css" href="Skyliner\stylesheet.css" />  
+    </head>
+
+    <body>
+
+          <!--Navigation Bar-->
+              <div id="navbar">
+                <a href="#home"><button class="openbtn" onclick="openNav()">
+              <div id="menuicon"></div>
+              <div id="menuicon"></div>
+              <div id="menuicon"></div>
+                    </button>  </a>
+                <div class="topnav-centered">
+                  <a href="C:\Users\Teapot\Documents\My Web Sites\index.html" class="active"><img width=70px src="skylinerwhite.png"></a>
+                </div>
+              </div>
+
+                <div style="font-size: 25px; margin-top:30px;">
+
+          <!--Book now-->    
+                  <div class = "skyline">
+                    <div class = "caption">
+                      <span class = "border"> <a href="C:\Users\Teapot\Documents\My Web Sites\tickets.html">BOOK NOW</a> </span>
+                    </div>
+                  </div>
+
+                    <div style = "color: #777; background-color: rgb(236, 236, 236); text-align: center; padding: 50px 80px; text-align: justify;">
+                      <img class = "center" src="C:\Users\Teapot\Documents\My Web Sites\sailtheskiesblack.png"/> 
+                        <p class = "text_style_paragraph">
+                            Skyliner is a fictional discount airline created by Al Farmer, 
+                            Te'a Flores, and Myran Webb. It's a Utah-based company founded in 2019 that
+                            serves its surrounding states including Nevada, Idaho, Colorado, New Mexico,
+                            and Arizona. </p>
+                            <p class = "text_style_paragraph"> Our missions is to spare no effort in providing our members with 
+                            service that is comfortable, friendly, and affordable. 
+                        </p>
+                    </div>
+
+<!--Skymiles or smthn-->
+<div class = "wing">
+    <div class = "caption">
+      <span class = "border"> <a href="C:\Users\Teapot\Documents\My Web Sites\rewards.html">SKYMILES </a> </span>
+    </div>
+  </div>
+
+  <div style = "color: #777; background-color: white; text-align: center; padding: 50px 80px; text-align: justify;">
+      <h1 class="text_style_header" style="text-align: center;"> Skymiles</h3> 
+      <h3 class="text_style_header" style="text-align: center;"> Our Frequent Fliers Program </h3>
+        <p class = "text_style_paragraph">
+            Find yourself traveling a lot? Skymiles has got your back! For every mile flown, recieve one mile
+            in return to fund your next adventure on us.  
+        </p>
+    </div>
+
+          <!--Mission statement-->          
+                  <div class = "flightattendant">
+                      <div class = "caption">
+                        <span class = "border"><a href = "C:\Users\Teapot\Documents\My Web Sites\jobs.html">APPLY NOW</a></span>
+                      </div>
+                    </div>
+
+                    <div style = "background-color: rgb(56, 56, 56); text-align: center; padding: 70px 80px; text-align: justify;"> 
+                        <h3 class="text_style_header" style="text-align: center; color: white; "> Job Opportunities </h3> 
+                        <p style = "color: white;" class = "text_style_paragraph">
+                            Looking for the perfect career opportunity? Skyliner is a great place to start! 
+                        </p>
+                        <p style = "color: white;" class = "text_style_paragraph">
+                            Simply fill out an application to become a part of our amazing staff.  
+                        </p>
+                      </div>
+
+          
+          <!--Job Applications? -->             
+                      <div class = "social">
+                          <div class = "caption">
+                            <span class = "border"><a href="C:\Users\Teapot\Documents\My Web Sites\social.html">CONNECT WITH US</a></span>
+                          </div>
+                        </div>
+
+                        <div style = "color: #777; background-color: white; text-align: center; padding: 15px; text-align: justify;">
+                      
+                          </div>
+                </div>
+              
+          <!--Side Menu-->
+              <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\index.html"><img height=15px; src=home.png> Home</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\tickets.html"><img height=15px; src=ticket.png> Tickets</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\jobs.html"><img height=15px; src=briefcase.png> Jobs</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\rewards.html"><img height=15px; src=debitcard.png> Rewards</a>
+                <a href="C:\Users\Teapot\Documents\My Web Sites\social.html"><img height=15px; src=hashtag.png> Social</a>
+              </div>
+
+              <div height= 10%; class = "footer"> 
+                  <img src = "C:\Users\Teapot\Documents\My Web Sites\Skyliner\Social Media Icons\instagram.png">
+                  <img src = "C:\Users\Teapot\Documents\My Web Sites\Skyliner\Social Media Icons\facebook.png">
+                  <img src = "C:\Users\Teapot\Documents\My Web Sites\Skyliner\Social Media Icons\linkedin.png">
+                  <img src = "C:\Users\Teapot\Documents\My Web Sites\Skyliner\Social Media Icons\twitter.png">
+                  <img src = "C:\Users\Teapot\Documents\My Web Sites\Skyliner\Social Media Icons\youtube.png">           
+                </div>
+
+      
+          <!--Special Effects-->
+                <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                  if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                  } else {
+                    document.getElementById("navbar").style.top = "-70px";
+                  }
+                  prevScrollpos = currentScrollPos;
+                }
+
+                function openNav() {
+                  document.getElementById("mySidepanel").style.width = "130px";
+                }
+
+                function closeNav() {
+                  document.getElementById("mySidepanel").style.width = "0";
+                }
+                </script>
+
+    </body>
+  </html>
